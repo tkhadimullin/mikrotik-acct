@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "MikrotikAccounting": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}
