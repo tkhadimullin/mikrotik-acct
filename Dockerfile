@@ -15,7 +15,6 @@ FROM build AS publish
 RUN dotnet publish "MikrotikAccounting.csproj" -c Release -o /app/publish
 
 FROM base AS final
-VOLUME /app/appsettings.json
 WORKDIR /app
 COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "MikrotikAccounting.dll"]
