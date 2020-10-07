@@ -79,9 +79,7 @@ namespace MikrotikAccounting
             var result = new Dictionary<string, string>
             {
                 {"srcAddress", item.SrcAddress},
-                {"dstAddress", item.DstAddress},
-                //{"srcUser", item.SrcUser},
-                //{"dstUser", item.DstUser},
+                {"dstAddress", item.DstAddress}
             };
             foreach (var i in interfaces)
             {
